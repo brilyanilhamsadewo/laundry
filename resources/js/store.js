@@ -3,6 +3,8 @@ import Vuex from 'vuex'
 
 //IMPORT MODULE SECTION
 import auth from './stores/auth.js'
+import outlet from './stores/outlet.js'
+import courier from './stores/courier.js' //IMPORT FILE BARU
 
 Vue.use(Vuex)
 
@@ -10,7 +12,9 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
     //SEMUA MODULE YANG DIBUAT AKAN DITEPATKAN DIDALAM BAGIAN INI DAN DIPISAHKAN DENGAN KOMA UNTUK SETIAP MODULE-NYA
     modules: {
-        auth
+        auth,
+        outlet, //penambahan line baru untuk outlet
+        courier //DEFINISIKAN
     },
   	//STATE HAMPIR SERUPA DENGAN PROPERTY DATA DARI COMPONENT HANYA SAJA DAPAT DIGUNAKAN SECARA GLOBAL
     state: {
